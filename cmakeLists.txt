@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.10)
+
+
+#setting the project name
+project(procedural_generation VERSION 1.0)
+
+#adding the executable
+add_executable(procedural_generation main.cpp)
+
+#configuring header file to pass the version to the source code
+configure_file(config.h.in config.h)
+
+#adding the file configured in binary tree to the source path
+target_include_directories(procedural_generation PUBLIC "$(PROJECT_BINARY_DIR)")
+
