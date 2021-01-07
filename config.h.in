@@ -1,0 +1,4 @@
+// the configure options and settings for the project
+#define procedural_generation_VERSION_MAJOR @procedural_generation_VERSION_MAJOR
+#define procedural_generation_VERSION_MINOR @procedural_generation_VERSION_MINOR
+
